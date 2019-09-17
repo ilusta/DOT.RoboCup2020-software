@@ -1,0 +1,19 @@
+﻿  main.cpp
+  main.cpp: In function 'int main()':
+main.cpp(14,38): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+    writeStrUART(_UART1, "\r\nStart\r\n");
+                                        ^
+main.cpp(20,31): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+      writeStrUART(_UART1, "\r\n");
+                                 ^
+main.cpp(25,31): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+      writeStrUART(_UART4, "\r\n");
+                                 ^
+main.cpp(30,37): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+      writeStrUART(_UART1, "button\r\n");
+                                       ^
+  Linking VisualGDB/Debug/uart_test...
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 13KB out of 512KB (2%)
+  Used SRAM: 1528 bytes out of 128KB (1%)
+  Used CCMRAM: 0 bytes out of 64KB (0%)

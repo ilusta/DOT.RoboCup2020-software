@@ -1,0 +1,7 @@
+﻿  stm32f103_pin.cpp
+  stm32f103_sysFunc.cpp
+  stm32f103_UART.cpp
+  Linking VisualGDB/Debug/uart_test...
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 13KB out of 64KB (21%)
+  Used SRAM: 1320 bytes out of 20KB (6%)

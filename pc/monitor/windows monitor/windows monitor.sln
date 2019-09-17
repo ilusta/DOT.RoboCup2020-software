@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "windows monitor", "windows monitor.pyproj", "{E4DA812C-7127-4408-A37D-DCB8169C1A94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4DA812C-7127-4408-A37D-DCB8169C1A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DA812C-7127-4408-A37D-DCB8169C1A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E43649B-1ABA-4E8B-8123-5C07F966D4BB}
+	EndGlobalSection
+EndGlobal

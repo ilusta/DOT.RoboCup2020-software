@@ -1,0 +1,17 @@
+﻿  main.cpp
+  main.cpp: In function 'int main()':
+main.cpp(15,38): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+    writeStrUART(_UART1, "\r\nStart\r\n");
+                                        ^
+main.cpp(20,37): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+    writeStrUART(_UART1, "zero imu\r\n");
+                                       ^
+  main.cpp: In function 'void sendDataToMonitor()':
+main.cpp(82,29): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+    writeStrUART(_UART1, "\r\n");
+                               ^
+  Linking VisualGDB/Debug/stm32f407_monitor_test...
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 15KB out of 512KB (3%) [+64]
+  Used SRAM: 1584 bytes out of 128KB (1%)
+  Used CCMRAM: 0 bytes out of 64KB (0%)

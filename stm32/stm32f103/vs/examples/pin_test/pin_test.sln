@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pin_test", "pin_test.vcxproj", "{A4F9A070-2415-40D2-872B-C5C76B85B3F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4F9A070-2415-40D2-872B-C5C76B85B3F0}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{A4F9A070-2415-40D2-872B-C5C76B85B3F0}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{A4F9A070-2415-40D2-872B-C5C76B85B3F0}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{A4F9A070-2415-40D2-872B-C5C76B85B3F0}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25B06BA8-AF76-43C9-8BA4-61337D6B1F49}
+	EndGlobalSection
+EndGlobal

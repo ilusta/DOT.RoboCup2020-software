@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{4aab0c7d-6c4a-4301-aeec-444d3ab07d57}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{9c28dd70-efa0-4490-8a81-422f2a5786ad}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{f43cfb91-a1ba-45c8-bf2c-5b9b21fb306e}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{17695a1e-5226-43a4-b7ee-b2b1a37ef7cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CMSIS">
+      <UniqueIdentifier>{a88fd475-fb36-4962-9eff-557a0d3e232e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\startup">
+      <UniqueIdentifier>{cfb385e0-c023-44bf-b2fa-64389f9cafa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CMSIS">
+      <UniqueIdentifier>{e8231d9a-f1a8-4368-9aa0-1925dfcd0ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\periph library">
+      <UniqueIdentifier>{ceca1ab2-90f6-474e-8838-4dde9638275e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\periph library">
+      <UniqueIdentifier>{f8b591d2-916c-4636-80ba-5705f08739d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\STM32F10x_StdPeriph_Driver\src\misc.c">
+      <Filter>Source files\CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\CMSIS_StdPeriph\CM3\CoreSupport\core_cm3.c">
+      <Filter>Source files\CMSIS</Filter>
+    </ClCompile>
+    <ClInclude Include="$(BSP_ROOT)\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc\misc.h">
+      <Filter>Header files\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F1xxxx\CMSIS_StdPeriph\CM3\CoreSupport\core_cm3.h">
+      <Filter>Header files\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F1xxxx\CMSIS_StdPeriph\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h">
+      <Filter>Header files\CMSIS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F1xxxx\CMSIS_StdPeriph\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h">
+      <Filter>Header files\CMSIS</Filter>
+    </ClInclude>
+    <None Include="uart_test-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="uart_test-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32F1xxxx\StartupFiles\startup_stm32f103xb.c">
+      <Filter>Source files\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="system_stm32f10x.c">
+      <Filter>Source files\CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\periph library\src\stm32f103_pin.cpp">
+      <Filter>Source files\periph library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\periph library\src\stm32f103_sysFunc.cpp">
+      <Filter>Source files\periph library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\periph library\src\stm32f103_UART.cpp">
+      <Filter>Source files\periph library</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\periph library\inc\stm32f103_pin.h">
+      <Filter>Header files\periph library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\periph library\inc\stm32f103_sysFunc.h">
+      <Filter>Header files\periph library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\periph library\inc\stm32f103_UART.h">
+      <Filter>Header files\periph library</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="stm32.props">
+      <Filter>Source files\startup</Filter>
+    </None>
+  </ItemGroup>
+</Project>

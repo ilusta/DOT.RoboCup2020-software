@@ -1,0 +1,10 @@
+﻿  stm32f103_I2C.cpp
+  main.cpp
+  main.cpp: In function 'int main()':
+main.cpp(14,38): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+    writeStrUART(_UART1, "\r\nStart\r\n");
+                                        ^
+  Linking VisualGDB/Debug/i2c_test...
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 13KB out of 64KB (20%)
+  Used SRAM: 1320 bytes out of 20KB (6%)

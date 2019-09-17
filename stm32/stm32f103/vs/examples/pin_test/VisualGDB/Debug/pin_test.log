@@ -1,0 +1,16 @@
+﻿  stm32f103_pin.cpp
+  stm32f103_sysFunc.cpp
+  stm32f103_UART.cpp
+  main.cpp
+  main.cpp: In function 'int main()':
+main.cpp(15,38): warning :  ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+    writeStrUART(_UART1, "\r\nStart\r\n");
+                                        ^
+  system_stm32f10x.c
+  startup_stm32f103xb.c
+  misc.c
+  core_cm3.c
+  Linking VisualGDB/Debug/pin_test...
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 13KB out of 64KB (20%) [-176]
+  Used SRAM: 1320 bytes out of 20KB (6%)
