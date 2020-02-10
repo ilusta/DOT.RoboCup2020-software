@@ -1,4 +1,5 @@
 #include "stm32f407_sysFunc.h"
+#include "stm32f407_pin.h"
 
 
 unsigned long _millis = 0;
@@ -62,8 +63,22 @@ void initRCC(void){
 	RCC->CFGR |= RCC_CFGR_SW_PLL;				//select source SYSCLK = PLL
 	while((RCC->CFGR & RCC_CFGR_SWS) == 2);		//wait till PLL is used
 	
+	//////////
+	/*RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;			//enable MCO
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
 	
-	/*RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;			//enable MCO
+	initPin(A, 8, AFPP, PU);
+	
+	//GPIOA->CRH &= ~GPIO_CRH_CNF8_0;				//configure MCO
+	//GPIOA->CRH |= GPIO_CRH_CNF8_1;
+	//GPIOA->CRH |= GPIO_CRH_MODE8;
+	
+	RCC->CFGR |= RCC_CFGR_MCO1_0;					//select PLL / 2 as MCO source
+	RCC->CFGR |= RCC_CFGR_MCO1_1;
+	
+	RCC->CFGR |= RCC_CFGR_MCO1PRE_0;
+	//////////
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;			//enable MCO
 	
 	GPIOA->CRH &= ~GPIO_CRH_CNF8_0;				//configure MCO
 	GPIOA->CRH |= GPIO_CRH_CNF8_1;

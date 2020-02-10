@@ -1,5 +1,5 @@
-#ifndef stm32f407_UART
-#define stm32f407_UART
+#ifndef STM32F407_UART
+#define STM32F407_UART
 
 #include "stm32f4xx.h"
 #include "stm32f407_pin.h"

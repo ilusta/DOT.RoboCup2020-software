@@ -1,5 +1,5 @@
-#ifndef stm32f407_pin
-#define stm32f407_pin
+#ifndef STM32F407_PIN
+#define STM32F407_PIN
 
 #include "stm32f4xx.h"
 #include "stdbool.h"

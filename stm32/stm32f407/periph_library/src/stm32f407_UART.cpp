@@ -181,7 +181,6 @@ void writeStrUART(unsigned int num, char* data){
 	
 }
 
-
 uint8_t UARTAvailable(unsigned int num){
 	//return number of available bytes to read
 	return (uint8_t)(UARTbufSize + _bufRxHead[num] - _bufRxTail[num]) % UARTbufSize;
